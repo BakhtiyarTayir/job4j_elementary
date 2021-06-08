@@ -20,4 +20,12 @@ public class FactorialTest {
         int result = Factorial.calc(number);
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenCalculateFactorialForThreeThenSix() {
+        int number = 3;
+        int expected = 6;
+        int result = Factorial.calc(number);
+        Assert.assertEquals(expected, result);
+    }
 }
