@@ -2,7 +2,7 @@ package ru.job4j.array;
 
 public class Square {
 
-    private static int[] calculate(int bound) {
+    public static int[] calculate(int bound) {
         int[] rsl = new int[bound];
         for (int index = 0; index < rsl.length; index++) {
             rsl[index] = (int) Math.pow(index, 2);
