@@ -24,4 +24,11 @@ public class CheckTest {
         boolean result = Check.mono(data);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void whenDataNotMonoByFalseThenFalse() {
+        boolean[] data = new boolean[] {false, true, false};
+        boolean result = Check.mono(data);
+        Assert.assertFalse(result);
+    }
 }
