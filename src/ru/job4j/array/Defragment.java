@@ -4,11 +4,10 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                int point = index; /* указатель на null ячейку. */
                 /* переместить первую не null ячейку. Нужен цикл. */
-                for (int j = 0; j < array.length; j++) {
-                    if (array[j] != null && j > point) {
-                        swap(array, point, j);
+                for (int j = index + 1; j < array.length; j++) {
+                    if (array[j] != null) {
+                        swap(array, index, j);
                         break;
                     }
                 }
