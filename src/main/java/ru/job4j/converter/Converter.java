@@ -33,7 +33,6 @@ public class Converter {
         System.out.println("120 rubles are 2 dollar. Test result : " + passed2);
         System.out.println("2 dollars are 120 rubles. Test result : " + passed3);
         System.out.println("2 euro 140 rubles. Test result : " + passed4);
-
     }
 
 }
